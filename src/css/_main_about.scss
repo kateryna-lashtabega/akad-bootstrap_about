@@ -1,0 +1,25 @@
+.about__subtitle {
+	font-size: 14px;
+	margin: 10px 0 25px;
+	font-family: 'Open Sans', sans-serif;
+}
+.benefits{
+	 .common-title {
+		text-align: center;
+		}
+	&-text {
+		padding-top: 40px;
+
+		@include _media(lg) {
+				padding-top: 90px;
+			}
+	}
+
+}
+
+.team-img {
+	&__item {
+		padding: 15px;
+	}
+
+}

@@ -1,0 +1,82 @@
+footer {
+	padding: 50px 0;
+	background-color: $color_green;
+	
+}
+
+.footer__title {
+	font-size: 30px;
+	color: #fff;
+	margin: -7px;
+	padding-bottom: 25px;
+
+}
+.footer__in-touch {
+	text-align: center;
+	@include _media(lg) {
+				text-align: left;
+			}
+}
+
+.form__title {
+	font-size: 24px;
+
+	}
+.footer__form {
+	background-color: #fff;
+	padding: 20px 27px;
+	margin-top: 50px;
+		@include _media(lg) {
+			margin-top: 0;
+		}
+
+	p {
+		font-size: 16px;
+		line-height: 24px;
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 400;
+		color: #999;
+		
+	}
+
+	&-item {
+		font-size: 0;
+		
+
+
+		input[type=email] {
+			line-height: 48px;
+			height: 50px;
+			padding: 0 20px;
+			display: inline-block;
+			border: 1px solid $color_grey;
+			vertical-align: middle;
+			width: calc(100% - 95px);
+			font-size: 12px;
+			border-right: none;
+			
+			@include _media(sm) {
+				width: calc(100% - 135px);
+			}
+
+			&::placeholder {
+			text-transform: uppercase;
+			color: $color_grey;
+			
+			font-weight: 700;
+			}
+		}
+		.button {
+			vertical-align: middle;
+			width: 95px;
+			
+			@include _media(sm) {
+				width: 135px;
+			}
+		}
+
+	}
+	&:nth-last-child(2) {
+		padding-bottom: 28px;
+	}
+}
