@@ -2,15 +2,17 @@
 	outline: none !important;
 }
 body {
-	color: $color_main
+	color: $color_main;
+	font-family: 'Open Sans', sans-serif;
 	
 }
 
 a {
 	transition: all ease .5s;
-	color: inherit;
+	color: $color_main;
+	
 	&:hover {
-		color: inherit;
+		color: $color_main;
 	}
 }
 
@@ -102,5 +104,25 @@ p {
 		color: $color_green;
 		border-color: #fff;
 	}
+	&--small {
+		color: #fff;
+		line-height: 26px;
+		min-height: 30px;
+		padding: 0 15px;
+	}
 
+}
+
+ .contact-social a {
+ 	color: $color_grey-light;
+	display: inline-block;
+	
+	font-size: 18px;
+
+	&:not(:first-child) {
+		padding-left: 18px;
+	}
+	&:hover {
+		color: $color_main;
+	}
 }

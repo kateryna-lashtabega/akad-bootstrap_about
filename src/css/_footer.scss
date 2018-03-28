@@ -1,4 +1,4 @@
-footer {
+.main-footer {
 	padding: 50px 0;
 	background-color: $color_green;
 	
@@ -13,7 +13,7 @@ footer {
 }
 .footer__in-touch {
 	text-align: center;
-	@include _media(lg) {
+	@include _media(md) {
 				text-align: left;
 			}
 }
@@ -67,6 +67,7 @@ footer {
 			}
 		}
 		.button {
+			appearance: none;
 			vertical-align: middle;
 			width: 95px;
 			
@@ -78,5 +79,63 @@ footer {
 	}
 	&:nth-last-child(2) {
 		padding-bottom: 28px;
+	}
+}
+
+.nav-footer {
+	padding: 45px 0;
+	text-align: center;
+
+@include _media(sm) {
+			text-align: left;
+
+		}
+	&__list {
+		text-transform: uppercase;
+		font-size: 14px;
+		color: $color_grey-light;
+
+
+
+		& li:not(:last-child) {
+			padding-right: 10px;
+			position: relative;
+			
+			@include _media(sm) {
+			padding-right: 40px;
+			
+		}
+
+
+			:after {
+				content: '';
+				position: absolute;
+				display: inline-block;
+				width: 0;
+				height: 2px;
+				top: calc(50% - 1px);
+				right: 12px;
+				background-color: $color_grey-light;
+				
+					@include _media(sm) {
+					width: 4px;
+				}
+				
+			}
+		}
+
+		& li:hover {
+			color:  $color_main;
+		}
+	}
+	&-copyright, .contact-social {
+		text-transform: uppercase;
+		font-size: 14px;
+		color: $color_grey-light;
+		text-align: center;
+	
+@include _media(sm) {
+			text-align: right;
+		}
 	}
 }
